@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost/typeScriptApp', {
+const uri:string = process.env['MONGODB'] || 'mongodb://localhost/typeScriptApp';
+
+mongoose.connect(uri, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true

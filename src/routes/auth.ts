@@ -1,4 +1,4 @@
-﻿import express, { Router, Request, Response } from 'express';
+﻿import express, { Router} from 'express';
 import { signup, signin, profile } from '../controllers/auth.controllers';
 import { JwtMiddleware } from '../utils/jwtRepository';
 const jwtVerify = new JwtMiddleware().jwtVerify;

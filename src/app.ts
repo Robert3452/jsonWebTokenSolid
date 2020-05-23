@@ -6,7 +6,7 @@ import './database';
 const app: Application = express();
 
 
-app.set('port', 5000);
+app.set('port', process.env.PORT || 5000);
 
 app.use(express.json())
 
